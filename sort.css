@@ -1,38 +1,37 @@
-/* Общие стили для страницы сортов */
-/* ... (Ваши существующие стили) ... */
+/* Стили для страницы сортов */
 
-/* Стили для строки поиска (адаптивные) */
+/* Стили для строки поиска */
 .search-container {
     margin-bottom: 20px;
     text-align: center;
 }
 
 #search-input {
-    width: 80%;
-    max-width: 400px;
     padding: 10px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
     border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
 }
 
 #search-input::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* Стили для буквенной навигации (адаптивные) */
+/* Стили для буквенной навигации */
 .alphabet-navigation {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;  /* Важно для адаптивности! */
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
 .alphabet-navigation span {
     display: inline-block;
     padding: 5px 10px;
-    margin: 5px 5px; /* Добавил отступы между буквами */
+    margin: 5px;
     color: #fff;
     text-decoration: none;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -49,6 +48,7 @@
 #sorts-list {
     list-style: none;
     padding: 0;
+    margin: 0; /* Добавлен margin: 0; */
 }
 
 #sorts-list li {
@@ -60,24 +60,31 @@
 /* Медиа-запрос для мобильных устройств (ширина экрана до 768px) */
 @media (max-width: 768px) {
 
-    /* Изменения для строки поиска */
+    /* Стили для строки поиска на мобильных */
     #search-input {
-        width: 90%; /* Занимает больше места */
-        max-width: none; /* Убираем ограничение */
+        width: 90%;
+        max-width: none;
     }
 
-    /* Изменения для буквенной навигации */
+    /* Стили для буквенной навигации на мобильных */
     .alphabet-navigation {
+        flex-direction: row;
         justify-content: center; /* Центрируем буквы */
     }
 
     .alphabet-navigation span {
-        margin: 5px 2px; /* Меньше отступов между буквами на мобильных */
-        padding: 8px 12px; /* Чуть больше padding */
+        margin: 5px 2px; /* Уменьшаем отступы */
+        padding: 8px 12px; /* Увеличиваем padding */
     }
 
-    /*  (Дополнительные адаптивные стили для других элементов, если необходимо) */
+    /* Уменьшаем размер заголовка */
     .title {
-        font-size: 2.5em; /* Уменьшаем размер заголовка */
+        font-size: 2.5em;
+    }
+
+    /* Убираем горизонтальные отступы у основных секций */
+    .sorts-list {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
