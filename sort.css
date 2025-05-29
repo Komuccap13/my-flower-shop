@@ -1,0 +1,55 @@
+/* Стили для строки поиска */
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#search-input {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+}
+
+#search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Стили для буквенной навигации */
+.alphabet-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.alphabet-navigation span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.alphabet-navigation span:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+#sorts-list {
+    list-style: none;
+    padding: 0;
+}
+
+#sorts-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}

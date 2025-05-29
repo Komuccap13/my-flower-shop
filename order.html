@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ - Цветочный магазин "Под Радугой"</title>
+    <link rel="stylesheet" href="style.css"> <!-- Подключаем общие стили -->
+    <link rel="stylesheet" href="order.css"> <!-- Подключаем стили для страницы заказа -->
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <a class="nav-item" href="index.html">Главная</a>
+            <a class="nav-item" href="sort.html">Сорта</a>
+            <a class="nav-item" href="order.html">Заказ</a>
+            <a class="nav-item" href="contacts.html">Контакты</a>
+        </nav>
+
+        <div class="main">
+            <h1 class="title">Заказ</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="order-form">
+            <h2>Оформление заказа</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Адрес доставки:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="bouquet">Выберите букет:</label>
+                    <select id="bouquet" name="bouquet">
+                        <option value="romantika">Букет "Романтика"</option>
+                        <option value="solnechnoe">Букет "Солнечное настроение"</option>
+                        <option value="nezhnost">Букет "Нежность"</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Количество:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="comment">Комментарий:</label>
+                    <textarea id="comment" name="comment" rows="3"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Оформить заказ</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Цветочный магазин "Под Радугой"</p>
+    </footer>
+
+</body>
+</html>
